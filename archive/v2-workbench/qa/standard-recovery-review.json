@@ -1,0 +1,136 @@
+{
+  "verdict": "pass-existing-art-preservation",
+  "geometry": "Recovered nonuniform source row cuts instead of stretching the original image to a uniform atlas. Exact original pixels placed in 192x208 cells with a shared baseline of 200; no resampling or anatomical deformation.",
+  "visual_review": "Inspected all extracted pose sequences at contact-sheet pet size. Full heads, torso and hands survive. Right and left rows face opposing screen directions, wave hand varies, idle head motion remains subtle, failed holds temple, waiting folds arms and scans, running manipulates hands, review considers chin. No extraction-induced size pops or anatomy seams.",
+  "source_limitations": [
+    "Original hologram fragments and slight streaks intentionally preserved as supplied art.",
+    "Jumping is inherited hologram dematerialization/rematerialization rather than literal vertical jump.",
+    "Waiting inherits folded-arm expectant scanning rather than open-hand asking.",
+    "Original source starts at first-row hair glow and has faint fringe at outer atlas boundaries; recovery preserves complete solid anatomy."
+  ],
+  "reviewed_warnings": [
+    "stable-slots is deliberate deterministic repair for provided artwork; all row boundaries were manually grounded against source poses."
+  ],
+  "preview_integrity": [
+    {
+      "state": "waiting",
+      "frames": 6,
+      "durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        260
+      ],
+      "adjacent_distinct": true
+    },
+    {
+      "state": "jumping",
+      "frames": 5,
+      "durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        280
+      ],
+      "adjacent_distinct": true
+    },
+    {
+      "state": "running",
+      "frames": 6,
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "adjacent_distinct": true
+    },
+    {
+      "state": "running-left",
+      "frames": 8,
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "adjacent_distinct": true
+    },
+    {
+      "state": "waving",
+      "frames": 4,
+      "durations_ms": [
+        140,
+        140,
+        140,
+        280
+      ],
+      "adjacent_distinct": true
+    },
+    {
+      "state": "failed",
+      "frames": 8,
+      "durations_ms": [
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        140,
+        240
+      ],
+      "adjacent_distinct": true
+    },
+    {
+      "state": "review",
+      "frames": 6,
+      "durations_ms": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        280
+      ],
+      "adjacent_distinct": true
+    },
+    {
+      "state": "idle",
+      "frames": 6,
+      "durations_ms": [
+        280,
+        110,
+        110,
+        140,
+        140,
+        320
+      ],
+      "adjacent_distinct": true
+    },
+    {
+      "state": "running-right",
+      "frames": 8,
+      "durations_ms": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        220
+      ],
+      "adjacent_distinct": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "started_at": "2026-09-14T08:03:12.001403+00:00",
+  "budget_minutes": {
+    "preparation_and_existing_art_recovery": 7,
+    "look_directions": 12,
+    "final_qa_packaging": 7,
+    "buffer": 4
+  },
+  "stages": []
+}

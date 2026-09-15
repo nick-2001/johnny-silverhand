@@ -1,0 +1,179 @@
+{
+  "source": "source-relic-bust.png",
+  "rows": [
+    {
+      "state": "idle",
+      "method": "stable-slots",
+      "source_row": 0,
+      "source_y_bounds": [
+        0,
+        145
+      ],
+      "source_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scale": 1.0,
+      "baseline": 200
+    },
+    {
+      "state": "running-right",
+      "method": "stable-slots",
+      "source_row": 1,
+      "source_y_bounds": [
+        145,
+        285
+      ],
+      "source_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "scale": 1.0,
+      "baseline": 200
+    },
+    {
+      "state": "running-left",
+      "method": "stable-slots",
+      "source_row": 2,
+      "source_y_bounds": [
+        285,
+        427
+      ],
+      "source_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "scale": 1.0,
+      "baseline": 200
+    },
+    {
+      "state": "waving",
+      "method": "stable-slots",
+      "source_row": 3,
+      "source_y_bounds": [
+        427,
+        576
+      ],
+      "source_columns": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "scale": 1.0,
+      "baseline": 200
+    },
+    {
+      "state": "jumping",
+      "method": "stable-slots",
+      "source_row": 4,
+      "source_y_bounds": [
+        576,
+        722
+      ],
+      "source_columns": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "scale": 1.0,
+      "baseline": 200
+    },
+    {
+      "state": "failed",
+      "method": "stable-slots",
+      "source_row": 5,
+      "source_y_bounds": [
+        722,
+        868
+      ],
+      "source_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "scale": 1.0,
+      "baseline": 200
+    },
+    {
+      "state": "waiting",
+      "method": "stable-slots",
+      "source_row": 6,
+      "source_y_bounds": [
+        868,
+        1018
+      ],
+      "source_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scale": 1.0,
+      "baseline": 200
+    },
+    {
+      "state": "running",
+      "method": "stable-slots",
+      "source_row": 7,
+      "source_y_bounds": [
+        1018,
+        1185
+      ],
+      "source_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scale": 1.0,
+      "baseline": 200
+    },
+    {
+      "state": "review",
+      "method": "stable-slots",
+      "source_row": 8,
+      "source_y_bounds": [
+        1185,
+        1385
+      ],
+      "source_columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "scale": 1.0,
+      "baseline": 200
+    }
+  ]
+}

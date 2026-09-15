@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>强尼·银手 · 宠物预览</title>
+<style>
+body{margin:0;background:#111319;color:#f4f4ed;font:16px system-ui;padding:40px}main{max-width:1000px;margin:auto}h1{color:#eaff50}p{color:#b0b6c4;line-height:1.8}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px}.card{border:1px solid #343943;border-radius:16px;background:#1b2029;text-align:center;padding:16px}.sprite{width:192px;height:208px;margin:auto;background-image:url('johnny-silverhand/spritesheet.png');background-size:1536px 1872px}button,input{margin:8px;padding:8px}body.light{background:#f3f1e7;color:#171923}.light .card{background:#e0e1dc}.light h1{color:#525e00}a{color:inherit}
+</style><main><h1>JOHNNY SILVERHAND</h1><p>强尼·银手 / 自定义 Codex 宠物<br>RELIC ENGRAM · 写实半身 · 银色机械臂 · 全息数字幽灵</p><button id="pause">暂停动画</button><button id="theme">切换浅色背景</button><label>速度 <input id="fps" type="range" min="2" max="16" value="8"></label><div class="grid" id="grid"></div><p>此页面用于逐动作检查。宠物配置见 <a href="johnny-silverhand/pet.json">pet.json</a>；完整精灵图见 <a href="johnny-silverhand/spritesheet.png">spritesheet.png</a>。</p></main>
+<script>
+const states=[['待机',6],['向右移动',8],['向左移动',8],['招手',4],['投影激活',5],['报错',8],['等待',6],['工作 · 手势',6],['审阅',6]];
+let paused=false,ticks=0,last=0;
+const sprites=states.map(([name,n],row)=>{const card=document.createElement('div');card.className='card';const sprite=document.createElement('div');sprite.className='sprite';sprite.style.backgroundPosition=`0px -${row*208}px`;const title=document.createElement('p');title.textContent=name;card.append(sprite,title);document.querySelector('#grid').append(card);return sprite});
+document.querySelector('#pause').onclick=e=>{paused=!paused;e.target.textContent=paused?'继续动画':'暂停动画'};
+document.querySelector('#theme').onclick=()=>document.body.classList.toggle('light');
+function animate(now){if(!paused&&now-last>=1000/Number(document.querySelector('#fps').value)){ticks++;last=now;sprites.forEach((el,row)=>el.style.backgroundPosition=`-${(ticks%states[row][1])*192}px -${row*208}px`)}requestAnimationFrame(animate)}requestAnimationFrame(animate);
+</script></html>
